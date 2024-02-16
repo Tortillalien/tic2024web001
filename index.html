@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by CLJM20232B28</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/leaflet-extra-markers/1.2.2/css/leaflet.extra-markers.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <link rel="stylesheet" href="styles.css">
+
+  <title>están mas buenas</title>
+</head>
+<body>
+  <div class="header">
+ <div class="foto"><img src="https://img.rtve.es/imagenes/croquetas-jamon/1596185200707.jpg" width= 400px height=200px></div>
+    <div class= "cuadro1" id="cuadro1"><div class="title">Las <span class="colorful-text">croquetas</span> no pueden estar más buenas</div>
+<subapartados>
+    <div class="subapartado1"> Están deliciosas </div>
+<div class= "texto1"> ¡Ah, las croquetas! Esas pequeñas joyas culinarias que desatan un carnaval de sabores en tu boca, haciendo que tu paladar haga la ola de felicidad. Son como pequeñas bombas de sabor, ¡pero en el buen sentido! Cuando muerdes una croqueta, es como si un coro de ángeles gastronómicos empezara a cantar melodías deliciosas directamente en tu estómago.
+
+La riqueza de las croquetas es tan intensa que hasta el mismísimo Tío Rico de Monopoly estaría buscando la receta. Son tan sabrosas que, si las pusieras en una balanza con lingotes de oro, estoy bastante seguro de que las croquetas ganarían en peso (y en sabor, por supuesto). ¡Son el tesoro escondido en el cofre de la cocina! </div> </div>
+  <div class= "cuadro2" id="cuadro2"><div class= "subapartado2"> Son crujientitas </div>
+  <div class= "texto2"> Las croquetas, esas pequeñas maravillas gastronómicas, son tan crujientes que cuando les das un mordisco, el sonido es como el aplauso de mil palomitas estallando en un teatro. Su exterior dorado y crujiente es más irresistible que el sonido de un millón de burbujas de plástico explotando simultáneamente. Si los superhéroes tuvieran un arma secreta, seguramente sería una croqueta en cada mano, porque con un solo mordisco, los villanos se rendirían ante la explosión de crujidos que resonaría en sus oídos. ¡Son tan crujientes que hasta las hojas de otoño envidian el sonido que hacen al ser pisoteadas! Hay tres motivos que apoyan mi tesis: </div>
+ <ol>
+<li> Estudios científicos recientes han demostrado que el crujido de las croquetas es equiparable al ruido de una orquesta sinfónica tocando la "Oda a la Alegría". Los expertos afirman que este fenómeno sonoro único puede generar una sensación de felicidad instantánea en quienes lo experimentan. </li>
+   <li>Un renombrado chef galáctico, conocido por sus habilidades culinarias interplanetarias, ha proclamado públicamente que las croquetas crujientes son el secreto detrás de su éxito culinario. Según él, la crujiente textura de las croquetas es la razón por la cual los extraterrestres viajan miles de años luz solo para probarlas.</li>
+   <li>La Sociedad Internacional de Crugidos Gastronómicos ha otorgado a las croquetas mencionadas en el texto el premio anual al "Crujido Más Impactante del Universo". Los jueces, compuestos por aficionados a las golosinas crujientes y críticos culinarios de renombre, coinciden unánimemente en que el crujido de estas croquetas es tan excepcional que podría competir con el estruendo de un cohete despegando.</li>
+    </ol>
+    
+    <div class="subapartado3"> Son PERFECCIÓN </div>
+
+<div class="texto3"> Las croquetas, esos pequeños bocados de felicidad, son como las estrellas del firmamento culinario: perfectas, irresistibles y capaces de hacer que tu paladar realice una danza de alegría. Su exterior crujiente es como la armadura de un caballero, defendiendo el tesoro interior de cremosidad divina. Cada bocado es un viaje a la utopía gastronómica, un oasis de sabor donde la realidad se desvanece y solo queda la armonía de la croqueta, un monumento a la perfección que desafía las leyes de la física y hace que el tiempo se detenga. En comparación, cualquier otra creación culinaria parece una modesta aspirante a la corona de majestuosidad que solo las croquetas ostentan con gracia y desparpajo. ¡Hasta el mismísimo rey de la gastronomía se inclina ante estas pequeñas joyas, las auténticas reinas del universo culinario! </div>
+ <div class= "links"> <ul>
+      <li> <a href="https://www.croquetasricas.com/"> Una página web con recetas gourmet de croquetas</a></li>
+    <li><a href="https://www.divinacroqueta.com/">Croquetas A DOMICILIO</a></li>
+  <li><a href="https://elpais.com/gastronomia/el-comidista/2018/01/09/articulo/1515530144_350146.html">La historia de las croquetas</a></li>
+</ul>
+    </div></div>
+<div class="Creditos" id="creditosButton" onclick="mostrarCreditos()">Créditos</div>
+  <div class="Creditos" id="creditosMensaje" style="display: none;"></div>
+    <div class= "Copyright"> Copyright 2033😨😳</div>
+
+<button onclick="ocultarPrimeraSeccion()">Ocultar Primera Sección</button>
+
+<button onclick="mostrarPrimeraSeccion()">Mostrar Primera Sección</button>
+      
+<button onclick="cambiocolor()">Cambiar Color</button>
+      
+       <h1>Geolocalización</h1>
+    <button id="getLocationBtn">Obtener ubicación</button>
+    <div id="coordinates"></div>
+    <div id="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script src="script.js"></script>
+      
+    </body>
+    </html>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
